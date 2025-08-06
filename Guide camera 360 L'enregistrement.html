@@ -1,0 +1,177 @@
+<img src="" alt=""><!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Guide Caméra 360 - Enregistrement</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ecf0f1;
+    }
+
+    nav {
+      width: 260px;
+      background-color: #111920;
+      border-right: 1px solid #2c3e50;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    nav h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      color: #00d8ff;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      display: block;
+      color: #00d8ff;
+      text-decoration: none;
+      margin: 12px 0;
+      transition: all 0.2s ease;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      padding-left: 5px;
+    }
+
+    main {
+      margin-left: 280px;
+      padding: 40px 60px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 36px;
+      color: #00d8ff;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #00d8ff;
+      border-bottom: 2px solid #00d8ff44;
+      padding-bottom: 5px;
+      margin-top: 60px;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 216, 255, 0.2);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(0,216,255,0.2);
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    code {
+      background: #1a2a33;
+      color: #00d8ff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    p, li {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>🧠 Guide Caméra 360</h2>
+  <a href="#objectif">🎯 Objectif</a>
+  <a href="#modeles">📷 Modèles utilisés</a>
+  <a href="#memoire">💾 Mémoire</a>
+  <a href="#gestion">📂 Gestion des données</a>
+  <a href="#protocol">📝 Protocole</a>
+</nav>
+
+<main>
+  <h1>Guide Caméra 360</h1>
+  <p><strong>Auteurs :</strong> Souleimane Levaslot & Patrick NATAF — 6 août 2025</p>
+
+  <section id="objectif">
+    <h2>🎯 Objectif</h2>
+    <p>Les caméras 360 sont utilisées pour filmer des opérations afin de les intégrer par la suite à des applications VR/XR et à la Capsule (créée par Stéphane Brard).</p>
+    <p><strong>Attention :</strong> Ces deux modèles fonctionnent différemment, et leur traitement des vidéos diffère également.</p>
+  </section>
+
+  <section id="modeles">
+    <h2>📷 Modèles utilisés</h2>
+    <p>Nous utilisons pour l'heure deux modèles de caméras de la marque « Insta360 » :</p>
+    <ul>
+      <li><strong>Insta360 Pro</strong></li>
+      <li><strong>Insta360 Pro 2</strong></li>
+    </ul>
+    <p><strong>À savoir :</strong> Ces caméras utilisent en réalité six objectifs, dont les vidéos sont ensuite "stitchées" (assemblées) pour produire une seule vidéo à 360°.</p>
+  </section>
+
+  <section id="memoire">
+    <h2>💾 Mémoire</h2>
+    <h3>Insta360 Pro</h3>
+    <div style="display: flex; align-items: flex-start; gap: 20px;">
+      <div style="flex: 1;">
+        <p>La caméra Insta360 Pro possède une seule carte SD, qui s'occupe à la fois du stockage des vidéos et du traitement de l'enregistrement de la vidéo. Cette carte SD gère donc la vitesse et le stockage.</p>
+      </div>
+      <img src="img/IMG_3731.jpg" alt="Insta360 Pro - Configuration mémoire" style="width: 200px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); flex-shrink: 0;">
+    </div>
+
+    <h3>Insta360 Pro 2</h3>
+    <div style="display: flex; align-items: flex-start; gap: 20px;">
+      <div style="flex: 1;">
+        <p>La caméra Insta360 Pro 2 possède 6 emplacements pour cartes microSD et 1 emplacement pour carte SD. Ce principe permet de traiter l'enregistrement de chaque caméra indépendamment. Chaque caméra utilise sa propre microSD pour traiter l'image, ce qui rend l'Insta360 Pro 2 bien plus performante, mais demande plus de gestion.</p>
+        <p><strong>Configuration :</strong></p>
+        <ul>
+          <li>6 cartes microSD (une par objectif)</li>
+          <li>1 carte SD principale (copie globale)</li>
+        </ul>
+      </div>
+      <img src="img/IMG_3730.jpg" alt="Insta360 Pro 2 - Configuration mémoire" style="width: 200px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); flex-shrink: 0;">
+    </div>
+  </section>
+
+  <section id="gestion">
+    <h2>📂 Gestion des données</h2>
+    <p>Le devoir des ingénieurs et de tout autre utilisateur ou chargé de faire usage des caméras 360 est de s'assurer que les vidéos enregistrées soient sauvegardées hors des cartes SD (dans un disque dur ou sur le NAS). Puis nettoyer, c'est-à-dire supprimer les données des cartes pour laisser l'espace libre pour les prochains enregistrements.</p>
+    
+    <h3>Insta360 Pro</h3>
+    <p>L'Insta360 Pro possède une seule carte SD ; après avoir fini les enregistrements, il faut connecter la carte à un ordinateur afin de sauvegarder et supprimer les données présentes.</p>
+    
+    <h3>Insta360 Pro 2</h3>
+    <p>L'Insta360 Pro 2 possède une carte SD principale, donc même principe. Elle possède également 6 micro cartes SD, qui sauvegardent chaque enregistrement. Il faut donc supprimer les données de chaque microSD.</p>
+    <p><strong>Important :</strong> Pour l'heure, on n'a trouvé aucun moyen d'accéder facilement aux 6 microSD simultanément. Il faut donc utiliser un adaptateur microSD que vous connectez à un ordinateur afin de supprimer les vidéos.</p>
+    <p><strong>⚠️ Attention :</strong> Une mauvaise gestion des données entraîne des complications et des erreurs pour les prochains enregistrements, menant à la perte des futurs enregistrements.</p>
+  </section>
+
+  <section id="protocol">
+    <h2>📝 Protocole avant enregistrement</h2>
+    <p>Avant chaque enregistrement, il est impératif de suivre ces étapes :</p>
+    <ol>
+      <li><strong>Vérifier qu'une carte SD est bien présente</strong> dans l'emplacement approprié.</li>
+      <li><strong>Vérifier la mémoire</strong> : <code>Paramètres → Storage → Storage Space</code> pour s'assurer qu'il y a suffisamment d'espace disponible.</li>
+      <li><strong>Vérifier la batterie</strong> (prévoir un chargeur, fonctionnement sur secteur) pour éviter les interruptions pendant l'enregistrement.</li>
+      <li><strong>Adapter le mode d'enregistrement vidéo</strong> → flèche du bas (plusieurs fois) pour sélectionner le bon mode d'enregistrement.</li>
+    </ol>
+  </section>
+</main>
+
+</body>
+</html>
